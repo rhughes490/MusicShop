@@ -16,4 +16,6 @@ public class Piano extends Instrument {
     public void setNumberOfKeys(int numberOfKeys) {
         this.numberOfKeys = numberOfKeys;
     }
+
+    public String play(){ return "Piano goes ding, ding";}
 }

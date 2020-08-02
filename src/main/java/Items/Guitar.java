@@ -16,4 +16,6 @@ public class Guitar extends Instrument {
     public void setNumberOfString(int numberOfString) {
         this.numberOfString = numberOfString;
     }
+
+    public String play(){ return "Guitar goes strum, strum";}
 }

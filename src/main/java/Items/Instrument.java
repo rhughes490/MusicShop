@@ -1,6 +1,8 @@
 package Items;
 
-public abstract class Instrument extends Item {
+import Interfaces.IPlay;
+
+public abstract class Instrument extends Item implements IPlay {
 
     private String colour;
     private String type;

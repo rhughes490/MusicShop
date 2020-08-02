@@ -1,11 +1,12 @@
 package Items;
 
-public class Strings {
+public class Strings extends Item {
 
     private String type;
     private double gauge;
 
-    public Strings(String type, double gauge) {
+    public Strings(double costPrice, double retailPrice, String type, double gauge) {
+        super(costPrice, retailPrice);
         this.type = type;
         this.gauge = gauge;
     }

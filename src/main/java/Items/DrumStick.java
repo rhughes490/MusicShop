@@ -1,11 +1,12 @@
 package Items;
 
-public class DrumStick {
+public class DrumStick extends Item {
 
     private String make;
     private double weight;
 
-    public DrumStick(String make, double weight) {
+    public DrumStick(double costPrice, double retailPrice, String make, double weight) {
+        super(costPrice, retailPrice);
         this.make = make;
         this.weight = weight;
     }

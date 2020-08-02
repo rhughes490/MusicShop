@@ -16,4 +16,6 @@ public class Saxophone extends Instrument {
     public void setNumberOfValves(int numberOfValves) {
         this.numberOfValves = numberOfValves;
     }
+
+    public String play(){ return "Saxophone goes toot, toot";}
 }

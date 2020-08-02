@@ -1,10 +1,11 @@
 package Items;
 
-public class SheetMusic {
+public class SheetMusic extends Item {
 
     private String type;
 
-    public SheetMusic(String type) {
+    public SheetMusic(double costPrice, double retailPrice, String type) {
+        super(costPrice, retailPrice);
         this.type = type;
     }
 
