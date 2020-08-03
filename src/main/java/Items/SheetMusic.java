@@ -16,4 +16,8 @@ public class SheetMusic extends Item {
     public void setType(String type) {
         this.type = type;
     }
+
+    public double calculateMarkup() {
+        return this.retailPrice - this.costPrice;
+    }
 }

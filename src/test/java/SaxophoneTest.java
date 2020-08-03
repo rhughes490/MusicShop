@@ -69,4 +69,9 @@ public class SaxophoneTest {
             assertEquals(8, saxophone.getNumberOfValves());
         }
 
+    @Test
+    public void canPlay() {
+        assertEquals("Saxophone goes toot, toot", saxophone.playInstrument());
+    }
+
 }

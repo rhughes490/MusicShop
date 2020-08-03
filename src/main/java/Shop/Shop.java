@@ -36,11 +36,11 @@ public class Shop {
         return stock;
     }
 
-    public void addToStock(ISell item) {
+    public void addStock(ISell item) {
         this.stock.add(item);
     }
 
-    public void removeFromStock(ISell item) {
+    public void removeStock(ISell item) {
         this.stock.remove(this.stock.indexOf(item));
     }
 
@@ -50,7 +50,15 @@ public class Shop {
 
     public void sellItem(ISell item) {
         this.till += item.getRetailPrice();
-        removeFromStock(item);
+        removeStock(item);
+    }
+
+    public double totalPotentialProfit() {
+        double potentialProfit = 0;
+        for (ISell item : this.stock) {
+            potentialProfit += item.calculateMarkup();
+        }
+        return potentialProfit;
     }
 
 }

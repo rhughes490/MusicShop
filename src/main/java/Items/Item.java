@@ -1,9 +1,11 @@
 package Items;
 
-public abstract class Item {
+import Interfaces.ISell;
 
-    private double costPrice;
-    private double retailPrice;
+public abstract class Item implements ISell {
+
+    protected double costPrice;
+    protected double retailPrice;
 
     public Item(double costPrice, double retailPrice) {
         this.costPrice = costPrice;
@@ -26,7 +28,4 @@ public abstract class Item {
         this.retailPrice = retailPrice;
     }
 
-    public double getProfit() {
-        return this.retailPrice - this.costPrice;
-    }
 }

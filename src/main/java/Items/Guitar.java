@@ -17,5 +17,9 @@ public class Guitar extends Instrument {
         this.numberOfString = numberOfString;
     }
 
-    public String play(){ return "Guitar goes strum, strum";}
+    public String playInstrument(){ return "Guitar goes strum, strum";}
+
+    public double calculateMarkup() {
+        return this.retailPrice - this.costPrice;
+    }
 }

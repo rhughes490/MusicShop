@@ -17,5 +17,9 @@ public class Saxophone extends Instrument {
         this.numberOfValves = numberOfValves;
     }
 
-    public String play(){ return "Saxophone goes toot, toot";}
+    public String playInstrument(){ return "Saxophone goes toot, toot";}
+
+    public double calculateMarkup() {
+        return this.retailPrice - this.costPrice;
+    }
 }

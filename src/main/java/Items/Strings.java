@@ -26,4 +26,8 @@ public class Strings extends Item {
     public void setGauge(double gauge) {
         this.gauge = gauge;
     }
+
+    public double calculateMarkup() {
+        return this.retailPrice - this.costPrice;
+    }
 }

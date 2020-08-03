@@ -26,4 +26,8 @@ public class DrumStick extends Item {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
+    public double calculateMarkup() {
+        return this.retailPrice - this.costPrice;
+    }
 }

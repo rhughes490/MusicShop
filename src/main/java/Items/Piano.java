@@ -1,5 +1,7 @@
 package Items;
 
+import Interfaces.IPlay;
+
 public class Piano extends Instrument {
 
     private int numberOfKeys;
@@ -17,5 +19,9 @@ public class Piano extends Instrument {
         this.numberOfKeys = numberOfKeys;
     }
 
-    public String play(){ return "Piano goes ding, ding";}
+    public String playInstrument(){ return "Piano goes ding, ding";}
+
+    public double calculateMarkup() {
+        return this.retailPrice - this.costPrice;
+    }
 }

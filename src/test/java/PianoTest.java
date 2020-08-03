@@ -70,4 +70,9 @@ public class PianoTest {
         assertEquals(26, piano.getNumberOfKeys());
     }
 
+    @Test
+    public void canPlay() {
+        assertEquals("Piano goes ding, ding", piano.playInstrument());
+    }
+
 }
